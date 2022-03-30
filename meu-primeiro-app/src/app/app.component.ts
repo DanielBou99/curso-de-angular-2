@@ -5,6 +5,7 @@ import {
   AfterViewInit,
   Component,
   DoCheck,
+  OnDestroy,
   OnInit,
 } from '@angular/core';
 
@@ -13,17 +14,10 @@ import {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent
-  implements
-    OnInit,
-    DoCheck,
-    AfterContentInit,
-    AfterContentChecked,
-    AfterViewInit,
-    AfterViewChecked
-{
+export class AppComponent {
   title = 'meu-primeiro-app';
   public valor: number = 1;
+  public destruir: boolean = true;
 
   constructor() {}
 
@@ -31,24 +25,9 @@ export class AppComponent
     return (this.valor += 1);
   }
 
+  public destruirComponent() {
+    this.destruir = false;
+  }
+
   ngOnInit(): void {}
-
-  ngDoCheck(): void {
-    console.log('ngDoCheck');
-  }
-
-  ngAfterContentInit(): void {
-    console.log('ngAfterContentInit');
-  }
-
-  ngAfterContentChecked(): void {
-    console.log('ngAfterContentChecked');
-  }
-  ngAfterViewInit(): void {
-    console.log('ngAfterViewInit');
-  }
-
-  ngAfterViewChecked(): void {
-    console.log('ngAfterViewChecked');
-  }
 }
