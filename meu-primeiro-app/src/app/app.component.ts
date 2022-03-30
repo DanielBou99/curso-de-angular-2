@@ -15,18 +15,21 @@ import {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'meu-primeiro-app';
-  public valor: number = 1;
-  public destruir: boolean = true;
+  public value: number = 1;
+  public button: boolean = true;
 
   constructor() {}
 
-  public adicionar(): number {
-    return (this.valor += 1);
+  public add(): void {
+    this.value += 1;
   }
 
-  public destruirComponent() {
-    this.destruir = false;
+  public remove(): void {
+    this.value -= 1;
+  }
+
+  public toggleComponent() {
+    this.button = !this.button;
   }
 
   ngOnInit(): void {}
