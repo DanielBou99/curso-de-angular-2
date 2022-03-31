@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-biding.component.scss'],
 })
 export class DataBidingComponent implements OnInit {
-  public nome = 'data-binding';
+  public nome = 'Bou';
   public buttonDisabled = false;
   public textEnabled = false;
   public srcImage = 'img/black_view.png';
