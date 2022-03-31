@@ -2,3 +2,9 @@
 <br />
 <p *ngIf="textEnabled">{{ nome }}</p>
 <img [src]="srcImage" [title]="titleImg" [alt]="titleAlt" />
+<button (click)="alertaInfo($event)">Evento</button>
+<div
+  (mousemove)="mouseMoveTeste($event)"
+  style="background: red; width: 300px; height: 300px"
+></div>
+{{ position.x }} - {{ position.y }}
