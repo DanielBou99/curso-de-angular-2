@@ -1,0 +1,8 @@
+<p *ngIf="condition; else elseBlock">diretivas-estruturais works!</p>
+<ng-template #elseBlock>
+  <p>False</p>
+</ng-template>
+
+<p *ngIf="conditionClick">True</p>
+<p *ngIf="!conditionClick">False</p>
+<button (click)="onClick()">Clicar</button>
