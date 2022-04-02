@@ -13,3 +13,12 @@
   </li>
 </ul>
 <button (click)="onClickAddList()">Add</button>
+
+<div [ngSwitch]="nome">
+  <p *ngSwitchCase="'item 1'">Item 1</p>
+  <p *ngSwitchCase="'item 2'">Item 2</p>
+  <p *ngSwitchCase="'item 3'">Item 3</p>
+  <p *ngSwitchDefault="'item 4'">Digite um item</p>
+</div>
+
+<input type="text" [(ngModel)]="nome" />

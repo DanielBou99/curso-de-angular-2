@@ -13,6 +13,7 @@ export class DiretivasEstruturaisComponent implements OnInit {
     { nome: 'Item 2', idade: 23 },
     { nome: 'Item 3', idade: 22 },
   ];
+  public nome: string = '';
 
   constructor() {}
 
