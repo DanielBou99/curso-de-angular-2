@@ -9,6 +9,8 @@ export class DiretivasAtributosComponent implements OnInit {
   public valor: boolean = true;
   public tamanho: string = '20px';
   public backgroundColor: string = 'red';
+  public nome: string = '';
+  public list: Array<{ nome: string }> = [];
 
   constructor() {}
 
@@ -23,5 +25,10 @@ export class DiretivasAtributosComponent implements OnInit {
         this.tamanho = '20px';
       }
     }, 1000);
+  }
+
+  public salvar() {
+    this.list.push({ nome: this.nome });
+    this.nome = '';
   }
 }
