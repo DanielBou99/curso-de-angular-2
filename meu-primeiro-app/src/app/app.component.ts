@@ -18,6 +18,7 @@ export class AppComponent {
   public value: number = 1;
   public button: boolean = true;
   public addValue: number = 10;
+  public getDados: { nome: string; idade: number } | undefined;
 
   constructor() {}
 
@@ -32,6 +33,10 @@ export class AppComponent {
 
   public toggleComponent() {
     this.button = !this.button;
+  }
+
+  public setDados(event: { nome: string; idade: number }) {
+    this.getDados = event;
   }
 
   ngOnInit(): void {}
