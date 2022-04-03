@@ -17,11 +17,13 @@ import {
 export class AppComponent {
   public value: number = 1;
   public button: boolean = true;
+  public addValue: number = 10;
 
   constructor() {}
 
   public add(): void {
     this.value += 1;
+    this.addValue += 1;
   }
 
   public remove(): void {
