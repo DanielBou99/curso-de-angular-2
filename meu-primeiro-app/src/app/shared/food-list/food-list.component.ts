@@ -17,5 +17,9 @@ export class FoodListComponent implements OnInit {
       (res) => (this.foodList = res),
       (error) => console.log(error)
     );
+    this.foodListService.emitEvent.subscribe((res) => {
+      alert(`Você adicionou => ${res.nome}`);
+      return this.foodList.push(res);
+    });
   }
 }
