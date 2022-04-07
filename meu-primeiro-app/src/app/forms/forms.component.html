@@ -1,4 +1,4 @@
-<form #form="ngForm">
+<form #form="ngForm" (ngSubmit)="submitForm(form)">
   <label
     >Nome:
     <input
@@ -51,6 +51,9 @@
       {{ item.comida }}
     </option>
   </select>
+  <br />
+  <br />
+  <button [disabled]="form.invalid">Enviar dados</button>
 </form>
 <br />
 <br />
