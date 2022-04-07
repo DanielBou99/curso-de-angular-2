@@ -1,44 +1,28 @@
 {
   "list-food": [
     {
-      "id": 1,
-      "nome": "X Bacon"
+      "nome": "fadfsfsdfs",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Feijão"
+      "nome": "fdsfsd",
+      "id": 3
     },
     {
-      "id": 3,
-      "nome": "Ovo"
+      "nome": "csdcscs",
+      "id": 4
     },
     {
-      "id": 4,
-      "nome": "json-server --watch db.json"
-    },
-    {
-      "nome": "dasds",
+      "nome": "csdcscsdssdsdfffff",
       "id": 5
     },
     {
-      "nome": "dasds",
-      "id": 6
-    },
-    {
-      "nome": "teste",
+      "nome": "dfsffsfdsf",
       "id": 7
     },
     {
-      "nome": "x\\s",
+      "nome": "fsdfsf",
       "id": 8
-    },
-    {
-      "nome": "x\\sdddd",
-      "id": 9
-    },
-    {
-      "nome": "teste",
-      "id": 10
     }
   ]
 }
