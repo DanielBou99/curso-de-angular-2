@@ -19,5 +19,5 @@
     <input type="text" formControlName="lastName" />
   </label>
   {{ cadastroForm.get("firstName")?.value }}
-  <button>Enviar</button>
+  <button [disabled]="cadastroForm.invalid">Enviar</button>
 </form>
