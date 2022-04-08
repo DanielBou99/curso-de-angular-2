@@ -17,7 +17,24 @@
   <label>
     Sobrenome:
     <input type="text" formControlName="lastName" />
+    <span
+      class="alert"
+      *ngIf="
+        cadastroForm.get('lastName')?.errors &&
+        (cadastroForm.get('lastName')?.touched ||
+          cadastroForm.get('lastName')?.dirty)
+      "
+      >Favor preencher no mínimo
+      {{ cadastroForm.get("lastName")?.errors?.['minlength']?.requiredLength }}.
+      Atualmente possui
+      {{ cadastroForm.get("lastName")?.errors?.['minlength']?.actualLength }}
+    </span>
   </label>
-  {{ cadastroForm.get("firstName")?.value }}
+  <br />
+  <label>
+    Email:
+    <input type="email" formControlName="email" />
+  </label>
+
   <button [disabled]="cadastroForm.invalid">Enviar</button>
 </form>
